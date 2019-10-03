@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<div style="display:none">
+    %%[
+    Var @UID
+    SET @UID = AttributeValue("contactKey")
+    ]%%
+</div>
+<div class="slds-form-element__control" , style="display:none;">
+    <input type="text" id="text-input-id-1" value=%%=v(@uid)=%% />
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
